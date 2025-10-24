@@ -6,8 +6,7 @@ import pandas as pd
 # ==========================
 data = pd.read_csv("datos.csv")
 
-# Si el separador no es coma (por ejemplo, punto y coma), usá:
-#data = pd.read_csv("datos.csv", sep=';')
+# Eliminar columna ID
 data = data.drop(columns=["ID"])
 
 # ==========================
